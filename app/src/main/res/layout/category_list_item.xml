@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/category_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:padding="3dp"
+            android:src="@drawable/circle_image_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/check_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_tick"
+            app:layout_constraintEnd_toEndOf="@+id/category_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            tools:visibility="invisible"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_hindi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/category_image"
+            app:layout_constraintStart_toStartOf="@+id/category_image"
+            app:layout_constraintTop_toBottomOf="@+id/category_image" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
